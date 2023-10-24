@@ -15,6 +15,7 @@ void insertion_sort_list(listint_t **list)
 	current = *list;
 	while (current)
 	{
+		print_list(*list);
 		temp_next = current->next;
 		if (sorted == NULL || sorted->n >= current->n)
 		{
